@@ -25,5 +25,3 @@ decimal=$(printf "%d" $c)
 decimal2=$(printf "%d" $py)
 echo $decimal $decimal2
 echo "$(($decimal2 - $decimal)), ">> csv.csv
-#al hallar las admitancias de los fundamentales
-#el error entre las impedancias fundamentales y las totales
