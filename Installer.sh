@@ -13,11 +13,11 @@ else
 	gcc EjercicioD.c -o ejercicioD
 fi
 
-(time ./ejercicioB) 2> ../Nose.txt
+(time ./ejercicioA) 2> ../Nose.txt
 grep 'real' ../Nose.txt | tr -d '[a-z]' | sed -e 's/^	0//' > ../datei.txt
 c=$(cat ../datei.txt)
 
-(time python3 ./Lab32.py) 2> ../Nose.txt
+(time python3 ./Lab3.py) 2> ../Nose.txt
 grep 'real' ../Nose.txt | tr -d '[a-z]' | sed -e 's/^	0//' > ../datei.txt
 py=$(cat ../datei.txt)
 echo "$c $py"
